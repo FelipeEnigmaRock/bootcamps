@@ -8,7 +8,7 @@ form.onsubmit = function (e) {
     form.reset();
 }
 
-function addTasks() {
+function addTasks(description) {
     const taskContainer = document.createElement('div');
     const newTask = document.createElement('input');
     const taskLabel = document.createElement('label');
