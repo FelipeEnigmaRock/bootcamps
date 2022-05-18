@@ -20,10 +20,10 @@ const aprovados = [];
 function aprovaAluno(array, media) {     
     
     for (let i = 0; i < array.length; i++) {
-
+        const {nome, nota} = array[i];
          
-        if (array[i].nota >= media) {
-            aprovados.push(array[i].nome);
+        if (nota >= media) {
+            aprovados.push(nome);
         }
     }
     return aprovados;
